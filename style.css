@@ -10,6 +10,7 @@ body{
     line-height: 1.5;
 }
 header{
+    min-height: 450px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
 
@@ -24,7 +25,6 @@ h1, h2, h3, h4, a{
 }
 
 .bg_img{
-    height: 20vh;
     background-image: url("./img/head.png");
     background-position: center;
     background-size: cover;
@@ -63,6 +63,7 @@ h1, h2, h3, h4, a{
 #main_head div{
     margin: auto;
     width: 50%;
+    padding-bottom: 2em;
 }
 #main_head p{
     column-count: 2;
@@ -72,17 +73,21 @@ h1, h2, h3, h4, a{
     width: 50%;
     margin: auto;
     background-color: var(--primary-color);
+    padding: 2em 1em 1em;
 
 }
-#main_cont div{
+#main_cont > div{
+    height: 450px;
     width: 30%;
     display: inline-block;
     background-color: var(--secondary-color);
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 10px;
 }
-#main_cont p{
 
+.cont_box{
+    padding: 10px;
 }
 
 img{
@@ -92,6 +97,7 @@ img{
 #your_needs{
     width: 100%;
     background-color: var(--secondary-color);
+    padding: 2em;
 }
 #your_needs h2{
     text-transform: none;
@@ -106,15 +112,22 @@ img{
 #m_info div{
     width: 50%;
     display: inline-block;
-
-
 }
+
+
+
 #contacns{
     background-color: #2690d4;
 }
+
+.box{
+    padding: 2em;
+}
+
 footer{
     background-color: black;
     color: var(--secondary-color);
+    padding: 2em;
 }
 footer a{
     color: #2690d4;
